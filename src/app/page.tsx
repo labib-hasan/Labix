@@ -471,7 +471,7 @@ export default function Home() {
       </div>
 
       {/* Navbar */}
-      <nav className="fixed top-0 left-0 right-0 z-40 backdrop-blur-xl bg-[#0a0a0f]/80 border-b border-white/5">
+     {/*  <nav className="fixed top-0 left-0 right-0 z-40 backdrop-blur-xl bg-[#0a0a0f]/80 border-b border-white/5">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center perspective-1000">
@@ -501,7 +501,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-      </nav>
+      </nav> */}
 
       <main className="relative pt-20">
         {/* Premium Hero Section */}
