@@ -15,11 +15,16 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Labib Hasan | Fullstack Developer",
   description: "Premium portfolio showcasing modern web development projects and skills by Labib Hasan.",
-  viewport: "width=device-width, initial-scale=1",
-  themeColor: "#0f172a",
+/*   viewport: "width=device-width, initial-scale=1",
+  themeColor: "#0f172a", */
   icons: {
     icon: "/favicon.ico",
   },
+};
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#0f172a",
 };
 
 import Navbar from '../components/Navbar';
