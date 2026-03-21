@@ -470,39 +470,7 @@ export default function Home() {
         />
       </div>
 
-      {/* Navbar */}
-     {/*  <nav className="fixed top-0 left-0 right-0 z-40 backdrop-blur-xl bg-[#0a0a0f]/80 border-b border-white/5">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center perspective-1000">
-              <Image
-                src="/l.png"
-                alt="Logo"
-                width={140}
-                height={140}
-                className="h-42 mt-[-28px] mb-[-38px] ml-[-20px] w-auto object-contain animate-horizontal-spin"
-                priority
-              />
-            </div>
-            <div className="hidden md:flex ml-[-55px] items-center space-x-8">
-              {['Services', 'Projects', 'Process', 'Team'].map((item) => (
-                <a
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
-                  className="text-sm font-medium text-gray-300 hover:text-white transition-colors relative group"
-                >
-                  {item}
-                  <span className="absolute -bottom-1 left-0 w-0 h-px bg-gradient-to-r from-purple-400 to-pink-400 group-hover:w-full transition-all duration-300"></span>
-                </a>
-              ))}
-            </div>
-            <button className="px-6 py-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium text-sm hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 transform hover:scale-105">
-              Start Project
-            </button>
-          </div>
-        </div>
-      </nav> */}
-
+      
       <main className="relative pt-20">
         {/* Premium Hero Section */}
         <section className="relative px-6 max-w-7xl mx-auto min-h-[90vh] flex items-center mb-40">
@@ -899,69 +867,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Footer */}
-        {/* <footer className="relative px-6 py-12 border-t border-white/10">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid md:grid-cols-4 gap-8 mb-8">
-              <div>
-                <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
-                  Labib Hasan
-                </div>
-                <p className="text-gray-400 text-sm mb-6">
-                  Crafting exceptional digital experiences with cutting-edge technology.
-                </p>
-                <div className="flex gap-3">
-                  {socialLinks.map((social, idx) => (
-                    <a
-                      key={idx}
-                      href={social.url}
-                      className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 transition-all duration-300"
-                    >
-                      {social.icon}
-                    </a>
-                  ))}
-                </div>
-              </div>
-              <div>
-                <h4 className="font-bold text-white mb-4">Services</h4>
-                <ul className="space-y-2 text-sm text-gray-400">
-                  <li><a href="#" className="hover:text-purple-400 transition-colors">Web Development</a></li>
-                  <li><a href="#" className="hover:text-purple-400 transition-colors">Mobile Apps</a></li>
-                  <li><a href="#" className="hover:text-purple-400 transition-colors">UI/UX Design</a></li>
-                  <li><a href="#" className="hover:text-purple-400 transition-colors">E-Commerce</a></li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-bold text-white mb-4">Company</h4>
-                <ul className="space-y-2 text-sm text-gray-400">
-                  <li><a href="/about" className="hover:text-purple-400 transition-colors">About</a></li>
-                  <li><a href="/projects" className="hover:text-purple-400 transition-colors">Projects</a></li>
-                  <li><a href="/team" className="hover:text-purple-400 transition-colors">Team</a></li>
-                  <li><a href="/contact" className="hover:text-purple-400 transition-colors">Contact</a></li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-bold text-white mb-4">Newsletter</h4>
-                <p className="text-sm text-gray-400 mb-4">Subscribe for tech insights and updates</p>
-                <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>
-                  <input
-                    type="email"
-                    placeholder="Your email"
-                    className="flex-1 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500/50"
-                  />
-                  <button className="px-4 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white text-sm font-medium hover:shadow-lg hover:shadow-purple-500/25 transition-all">
-                    →
-                  </button>
-                </form>
-              </div>
-            </div>
-            <div className="text-center pt-8 border-t border-white/10">
-              <p className="text-sm text-gray-400">
-                © 2026 Labib Hasan. All rights reserved.
-              </p>
-            </div>
-          </div>
-        </footer> */}
+        
       </main>
 
       <style jsx>{`
