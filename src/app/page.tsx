@@ -865,13 +865,19 @@ export default function Home() {
               </p>
 
               <div className="flex flex-wrap gap-4 justify-center">
-                <button className="group relative px-8 py-4 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/25">
-                  <span className="relative z-10">Get Free Consultation</span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </button>
-                <button className="px-8 py-4 rounded-full border border-white/10 text-white font-semibold hover:bg-white/5 transition-all duration-300">
+                <a
+  href="https://wa.me/+8801877228505"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button className="group relative px-8 py-4 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/25">
+    <span className="relative z-10">Get Free Consultation</span>
+    <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+  </button>
+</a>
+               {/*  <button className="px-8 py-4 rounded-full border border-white/10 text-white font-semibold hover:bg-white/5 transition-all duration-300">
                   View Portfolio
-                </button>
+                </button> */}
               </div>
 
               {/* Contact Info */}
