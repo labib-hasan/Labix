@@ -31,10 +31,18 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-[#0a0a0f]/90 border-b border-white/10 shadow-xl shadow-black/30 transition-all duration-500 ${isScrolled ? 'py-2 shadow-2xl shadow-purple-500/10' : 'py-4'}`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-12 sm:h-16">
-           <div className="flex items-center perspective-1000">
+     <nav
+  className={`fixed top-0 left-0 right-0 z-50 
+  backdrop-blur-xl bg-[#0a0a0f]/90 
+  border-b border-white/10 
+  transition-all duration-500
+  h-22 flex items-center justify-between 
+  ${isScrolled ? 'shadow-2xl shadow-purple-500/10' : 'shadow-xl shadow-black/30'}
+`}
+>
+       <div className="w-full px-4 sm:px-6 lg:px-8">
+  <div className="flex items-center justify-between w-full">
+           <div className="flex items-center perspective-1000 justify-between">
                          <Image
                            src="/l.png"
                            alt="Logo"
