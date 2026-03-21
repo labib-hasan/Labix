@@ -801,54 +801,7 @@ export default function Home() {
           ref={setSectionRef(3)} 
           className="relative px-6 max-w-7xl mx-auto mb-40"
         >
-          <div className={`text-center mb-16 transition-all duration-1000 transform ${isVisible.team ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
-                Meet The Team
-              </span>
-            </h2>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Passionate experts dedicated to your success
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {teamMembers.map((member, idx) => (
-              <div
-                key={idx}
-                className={`group relative transition-all duration-1000 transform ${
-                  isVisible.team ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-                }`}
-                style={{ transitionDelay: `${idx * 150}ms` }}
-              >
-                <div className="relative mb-6 overflow-hidden rounded-3xl">
-                  {/* Image Placeholder */}
-                  <div className="w-full aspect-square bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center text-6xl">
-                    {member.name.charAt(0)}
-                  </div>
-                  
-                  {/* Social Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0f] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-3">
-                      {member.social.twitter && (
-                        <a href={member.social.twitter} className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-purple-500 transition-colors">𝕏</a>
-                      )}
-                      {member.social.linkedin && (
-                        <a href={member.social.linkedin} className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-purple-500 transition-colors">in</a>
-                      )}
-                      {member.social.github && (
-                        <a href={member.social.github} className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-purple-500 transition-colors">⌨️</a>
-                      )}
-                    </div>
-                  </div>
-                </div>
-
-                <h3 className="text-xl font-bold text-white mb-1">{member.name}</h3>
-                <p className="text-sm text-purple-400 mb-3">{member.role}</p>
-                <p className="text-sm text-gray-400">{member.bio}</p>
-              </div>
-            ))}
-          </div>
+          
         </section>
 
         {/* Skills Section */}
@@ -885,61 +838,7 @@ export default function Home() {
         </section>
 
         {/* Testimonials */}
-        <section className="relative px-6 max-w-7xl mx-auto mb-40">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-            <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
-              Client Success Stories
-            </span>
-          </h2>
-
-          <div className="relative">
-            <div className="flex overflow-hidden">
-              <div
-                className="flex transition-transform duration-500 ease-out"
-                style={{ transform: mounted ? `translateX(-${activeTestimonial * 100}%)` : 'none' }}
-              >
-                {testimonials.map((testimonial, idx) => (
-                  <div key={idx} className="w-full flex-shrink-0 px-4">
-                    <div className="p-8 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-purple-500/50 transition-all duration-300">
-                      <div className="flex items-center gap-4 mb-6">
-                        <div className="w-16 h-16 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center text-2xl font-bold text-white">
-                          {testimonial.name.charAt(0)}
-                        </div>
-                        <div>
-                          <div className="font-bold text-white">{testimonial.name}</div>
-                          <div className="text-sm text-gray-400">{testimonial.role}</div>
-                          <div className="text-xs text-purple-400">{testimonial.company}</div>
-                        </div>
-                      </div>
-                      <p className="text-lg text-gray-300 italic mb-4">"{testimonial.content}"</p>
-                      <div className="flex gap-1">
-                        {[...Array(testimonial.rating)].map((_, i) => (
-                          <span key={i} className="text-yellow-400">★</span>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Navigation */}
-            <div className="flex justify-center gap-2 mt-8">
-              {testimonials.map((_, idx) => (
-                <button
-                  key={idx}
-                  onClick={() => setActiveTestimonial(idx)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    idx === activeTestimonial
-                      ? 'w-12 bg-gradient-to-r from-purple-400 to-pink-400'
-                      : 'bg-gray-600 hover:bg-purple-400'
-                  }`}
-                  aria-label={`Go to testimonial ${idx + 1}`}
-                />
-              ))}
-            </div>
-          </div>
-        </section>
+        
 
         {/* CTA Section */}
         <section className="relative px-6 max-w-5xl mx-auto mb-40">
@@ -979,15 +878,15 @@ export default function Home() {
               <div className="flex flex-wrap justify-center gap-8 mt-12 pt-8 border-t border-white/10">
                 <div className="flex items-center gap-2 text-sm text-gray-400">
                   <span className="text-purple-400">📧</span>
-                  hello@labibhasan.com
+                  labibhasanariyan@gmail.com
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-400">
                   <span className="text-purple-400">📱</span>
-                  +1 (555) 123-4567
+                  +8801877228505
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-400">
                   <span className="text-purple-400">📍</span>
-                  San Francisco, CA
+                  GEC, Chittagong, Bangladesh
                 </div>
               </div>
             </div>
@@ -1029,10 +928,10 @@ export default function Home() {
               <div>
                 <h4 className="font-bold text-white mb-4">Company</h4>
                 <ul className="space-y-2 text-sm text-gray-400">
-                  <li><a href="#about" className="hover:text-purple-400 transition-colors">About</a></li>
-                  <li><a href="#projects" className="hover:text-purple-400 transition-colors">Projects</a></li>
-                  <li><a href="#team" className="hover:text-purple-400 transition-colors">Team</a></li>
-                  <li><a href="#contact" className="hover:text-purple-400 transition-colors">Contact</a></li>
+                  <li><a href="/about" className="hover:text-purple-400 transition-colors">About</a></li>
+                  <li><a href="/projects" className="hover:text-purple-400 transition-colors">Projects</a></li>
+                  <li><a href="/team" className="hover:text-purple-400 transition-colors">Team</a></li>
+                  <li><a href="/contact" className="hover:text-purple-400 transition-colors">Contact</a></li>
                 </ul>
               </div>
               <div>
@@ -1052,7 +951,7 @@ export default function Home() {
             </div>
             <div className="text-center pt-8 border-t border-white/10">
               <p className="text-sm text-gray-400">
-                © 2024 Labib Hasan. All rights reserved. Built with Next.js 14, Tailwind CSS, and ❤️
+                © 2026 Labib Hasan. All rights reserved.
               </p>
             </div>
           </div>
