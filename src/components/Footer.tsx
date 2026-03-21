@@ -55,15 +55,15 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-white mb-4 text-lg">Contact Info</h4>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li>hello@labibhasan.com</li>
-              <li>+1 (555) 123-4567</li>
-              <li>San Francisco, CA</li>
+              <li> labibhasanariyan@gmail.com</li>
+              <li>+8801877228505</li>
+              <li>GEC, Chittagong, Bangladesh</li>
             </ul>
           </div>
         </div>
         
         <div className="text-center pt-8 border-t border-white/10 text-sm text-gray-400">
-          © 2024 Labib Hasan. Built with Next.js 14, Tailwind CSS, and ❤️
+          © 2026 Labib Hasan. All rights reserved.
         </div>
       </div>
     </footer>

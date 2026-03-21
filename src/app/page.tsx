@@ -894,7 +894,7 @@ export default function Home() {
         </section>
 
         {/* Footer */}
-        <footer className="relative px-6 py-12 border-t border-white/10">
+        {/* <footer className="relative px-6 py-12 border-t border-white/10">
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div>
@@ -955,7 +955,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </footer>
+        </footer> */}
       </main>
 
       <style jsx>{`
