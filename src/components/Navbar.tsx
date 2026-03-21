@@ -121,7 +121,7 @@ export default function Navbar() {
                 onClick={() => setIsMenuOpen(false)}
                 className="block w-full text-center py-6 px-12 mx-auto rounded-3xl bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 text-white font-black text-xl sm:text-2xl shadow-2xl shadow-purple-500/50 hover:shadow-purple-500/70 hover:scale-[1.02] hover:-translate-y-2 transition-all duration-700 ring-4 ring-purple-400/60 hover:ring-pink-500/70 max-w-md animate-bounce-slow origin-center"
               >
-                Let's Work Together 🚀
+                Let's Work Together🚀
               </Link>
             </div>
           </div>

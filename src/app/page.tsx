@@ -861,7 +861,7 @@ export default function Home() {
               </h2>
               
               <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
-                Let's discuss how we can help bring your vision to life with cutting-edge technology.
+                Let's discuss how we can help bring your vision to life with cutting-edge technology..
               </p>
 
               <div className="flex flex-wrap gap-4 justify-center">
@@ -869,7 +869,7 @@ export default function Home() {
   href="https://wa.me/+8801877228505"
   target="_blank"
   rel="noopener noreferrer"
->
+> 
   <button className="group relative px-8 py-4 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/25">
     <span className="relative z-10">Get Free Consultation</span>
     <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -892,7 +892,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-400">
                   <span className="text-purple-400">📍</span>
-                  GEC, Chittagong, Bangladesh
+                  GEC, Chittagong, Bangladesh.
                 </div>
               </div>
             </div>
