@@ -128,6 +128,19 @@ const SkillItem = ({ skill, index, isVisible }: { skill: string; index: number; 
 };
 
 export default function Home() {
+  interface Partner {
+  name: string;
+  logo: string;
+  url: string;
+}
+
+const partners: Partner[] = [
+  {
+    name: "Tawazun Computer",
+    logo: "/partners/p.png",
+    url: "https://www.facebook.com/profile.php?id=100066361103398",
+  },
+];
   const [isVisible, setIsVisible] = useState<VisibilityState>({});
   const [mousePosition, setMousePosition] = useState<MousePosition>({ x: 0, y: 0 });
   const [activeTestimonial, setActiveTestimonial] = useState<number>(0);
@@ -156,6 +169,8 @@ export default function Home() {
       const progress = (window.scrollY / totalScroll) * 100;
       setScrollProgress(progress);
     };
+
+ 
 
     window.addEventListener('mousemove', handleMouseMove);
     window.addEventListener('scroll', handleScroll);
@@ -566,6 +581,48 @@ export default function Home() {
             ))}
           </div>
         </section>
+
+        {/* Partner Section */}
+<section className="relative px-6 max-w-7xl mx-auto mb-40">
+  <div className="text-center mb-12">
+    <h2 className="text-4xl md:text-5xl font-bold mb-4">
+      <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+        Our Partners
+      </span>
+    </h2>
+    <p className="text-gray-400">
+      Trusted collaborations with leading companies
+    </p>
+  </div>
+
+  <div className="flex justify-center">
+   {partners.map((partner: Partner, idx: number) => (
+  <a
+    key={idx}
+    href={partner.url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="group relative flex flex-col items-center gap-3 p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-2"
+  >
+    <Image
+      src={partner.logo}
+      alt={partner.name}
+      width={120}
+      height={60}
+      className="object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+    />
+
+    {/* Partner Name */}
+    <span className="text-sm text-gray-400 group-hover:text-white transition">
+      {partner.name}
+    </span>
+
+    {/* Glow */}
+    <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-500/0 to-pink-500/0 group-hover:from-purple-500/10 group-hover:to-pink-500/10 transition-all duration-500"></div>
+  </a>
+))}
+  </div>
+</section>
 
         {/* Services Section */}
         <section 
